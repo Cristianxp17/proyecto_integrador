@@ -1,0 +1,11 @@
+{
+  "name": "proyecto_integrador",
+  "version": "1.0.0",
+  "description": "",
+  "main": "npm start",
+  "scripts": {
+    "test": "npm start"
+  },
+  "author": "",
+  "license": "ISC"
+}
