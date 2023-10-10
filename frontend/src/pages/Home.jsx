@@ -16,6 +16,7 @@ import ServiceList from '../services/serviceList';
 import FeaturedTourList from "../components/Featured-tours/FeatureTourList";
 import MasonryImagesGallery from '../components/image-gallery/MasonryImagesGallery';
 import Testimonials from '../components/Testimonial/Testimonials';
+import NewsLetter from '../shared/NewsLetter';
 
 const Home = () => {
     return (
@@ -166,6 +167,7 @@ const Home = () => {
                 </Container>
             </section>
             {/*------------------------------------testimonial section end------------------*/}
+        <NewsLetter/>
         </>
     );
 };
