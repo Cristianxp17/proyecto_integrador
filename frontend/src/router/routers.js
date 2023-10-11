@@ -8,13 +8,13 @@ import Tours from '../pages/Tours';
 import TourDetails from '../pages/Toursdetails';
 import Login from '../pages/Login';
 import Register from '../pages/Register';
-import SearchResultlist from './../pages/SearchResultsList';
+import SearchResultlist from '../pages/SearchResultsList';
 
 
-const routers = () => {
+const Routers = () => {
   return (
     <Routes>
-      <Route path= '/' element={<Navigate to='/Home' />} />
+      <Route path= '/' element={<Navigate to='/home' />} />
       <Route path = '/home'  element ={<Home/>}/>
       <Route path = '/tours'  element ={<Tours/>}/>
       <Route path = '/tours/:id'  element ={<TourDetails/>}/>
@@ -25,4 +25,4 @@ const routers = () => {
   );
 };
 
-export default routers
+export default Routers

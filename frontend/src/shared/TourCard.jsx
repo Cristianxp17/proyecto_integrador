@@ -15,16 +15,16 @@ const TourCard = ({ tour }) => {
             <Card>
                 <div className="tour__img">
                     <img src={photo} alt="tour-img" />
-                    {featured && <spam>Featured</spam> }
+                    {featured && <span>Featured</span> }
                 </div>
 
                 <CardBody>
                     <div className="card__top d-flex aling-items-center justify-content-between">
                         <span className="tour__location d-flex aling-items-center gap-1">
-                            <i class="ri-map-pin-line"></i> {city}
+                            <i className="ri-map-pin-line"></i> {city}
                         </span>
                         <span className="tour__rating d-flex aling-items-center gap-1">
-                            <i class="ri-star-fill"></i> {avgRating === 0 ? null : avgRating}
+                            <i className="ri-star-fill"></i> {avgRating === 0 ? null : avgRating}
                             {totalRating === 0 ? (
                                 "Not rated"
                             ) : (
@@ -42,9 +42,9 @@ const TourCard = ({ tour }) => {
                             ${price} <span> /per person</span>
                         </h5>
 
-                        <botton className="btn booking__btn">
+                        <button className="btn booking__btn">
                             <Link to={`/tours/${id}`}>Book Now</Link>
-                        </botton>
+                        </button>
                     </div>
                 </CardBody>    
             </Card>
